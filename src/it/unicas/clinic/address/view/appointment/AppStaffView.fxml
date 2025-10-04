@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@medical_theme.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicas.clinic.address.view.appointment.AppStaffViewController">
+    <children>
+      <Pane prefHeight="41.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="staffName" alignment="CENTER" layoutX="123.0" layoutY="8.0" promptText="Staff Name" />
+            <TextField fx:id="staffSurname" alignment="CENTER" layoutX="289.0" layoutY="8.0" promptText="Staff Surname" />
+            <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="469.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../resources/search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+        <TableView fx:id="staffTable" layoutX="-2.0" layoutY="40.0" prefHeight="313.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="surnameColumn" prefWidth="75.0" text="Surname" />
+                <TableColumn fx:id="specColumn" prefWidth="75.0" text="Specility" />
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <ButtonBar layoutY="351.0" prefHeight="50.0" prefWidth="600.0">
+         <buttons>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSelect" text="Select" />
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+         </buttons>
+         <padding>
+            <Insets right="218.0" />
+         </padding>
+        </ButtonBar>
+    </children>
+</AnchorPane>

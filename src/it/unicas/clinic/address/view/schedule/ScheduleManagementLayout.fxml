@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../medical_theme.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicas.clinic.address.view.schedule.ScheduleManagementLayoutController">
+    <children>
+        <TableView fx:id="scheduleTable" layoutX="-2.0" layoutY="31.0" prefHeight="321.0" prefWidth="600.0">
+            <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="dayColumn" prefWidth="75.0" text="Day" />
+                <TableColumn fx:id="starTimeColumn" prefWidth="75.0" text="Start time" />
+                <TableColumn fx:id="endTimeColumn" prefWidth="75.0" text="End time" />
+                <TableColumn fx:id="staffidColumn" prefWidth="75.0" text="Staff id" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <ButtonBar layoutY="351.0" prefHeight="50.0" prefWidth="600.0">
+            <buttons>
+                <Button mnemonicParsing="false" onAction="#handleInsertSchedule" text="Insert New Schedule" />
+                <Button mnemonicParsing="false" onAction="#handleUpdateSchedule" prefHeight="26.0" prefWidth="408.0" text="Update a Schedule" />
+                <Button mnemonicParsing="false" onAction="#handleDeleteSchedule" prefHeight="26.0" text="Delete a Schedule" />
+            </buttons>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+        </ButtonBar>
+    </children>
+</AnchorPane>

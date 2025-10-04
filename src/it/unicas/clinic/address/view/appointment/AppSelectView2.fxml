@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicas.clinic.address.view.appointment.AppSelectViewController2">
+    <children>
+        <GridPane prefHeight="400.0" prefWidth="600.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.20001220703125" minWidth="10.0" prefWidth="148.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="252.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TableView fx:id="dateTable" onMouseClicked="#showTime" prefHeight="200.0" prefWidth="200.0" stylesheets="@medical_theme.css">
+                    <columns>
+                        <TableColumn fx:id="dateColumn" prefWidth="151.20001220703125" text="Date" />
+                    </columns>
+                </TableView>
+                <TableView fx:id="timeTable" onMouseClicked="#showDetail" prefHeight="200.0" prefWidth="200.0" stylesheets="@medical_theme.css" GridPane.columnIndex="1">
+                    <columns>
+                        <TableColumn fx:id="timeColumn" prefWidth="195.20001220703125" text="Time" />
+                    </columns>
+                </TableView>
+                <SplitPane dividerPositions="0.8965863453815262" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                            <children>
+                                <GridPane layoutY="64.0" prefHeight="290.0" prefWidth="250.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.20001220703125" minWidth="10.0" prefWidth="124.20001220703125" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.79998779296875" minWidth="10.0" prefWidth="125.79998779296875" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="129.0" text="Service:" />
+                                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="127.0" text="Date" GridPane.rowIndex="1" />
+                                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="132.0" text="Time" GridPane.rowIndex="2" />
+                                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="128.0" text="Duration" GridPane.rowIndex="3" />
+                                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="126.0" text="Staff" GridPane.rowIndex="4" />
+                                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="126.0" text="Client" GridPane.rowIndex="5" />
+                                        <Label fx:id="serviceL" alignment="CENTER" prefHeight="18.0" prefWidth="127.0" text="Label" GridPane.columnIndex="1" />
+                                        <Label fx:id="dateL" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="126.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Label fx:id="timeL" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="127.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <Label fx:id="durationL" alignment="CENTER" prefHeight="18.0" prefWidth="128.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <Label fx:id="staffL" alignment="CENTER" prefHeight="58.0" prefWidth="126.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                        <Label fx:id="clientL" alignment="CENTER" prefHeight="58.0" prefWidth="126.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    </children>
+                                </GridPane>
+                                <Pane layoutX="14.0" layoutY="7.0" prefHeight="65.0" prefWidth="222.0">
+                                    <children>
+                                        <Label layoutX="77.0" layoutY="15.0" text="Recap">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                            <children>
+                                <Button layoutX="38.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleAddApp" stylesheets="@medical_theme.css" text="Update" />
+                                <Button layoutX="168.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleCancel" stylesheets="@medical_theme.css" text="Back" />
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

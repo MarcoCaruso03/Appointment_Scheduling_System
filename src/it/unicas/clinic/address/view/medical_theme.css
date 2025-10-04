@@ -1,0 +1,91 @@
+/* Radice principale */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f5f7fa;
+    -fx-text-fill: #333;
+}
+
+/* Stile per GridPane */
+.grid-pane {
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center;
+}
+
+/* Stile per le celle del GridPane */
+.grid-pane .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+}
+
+.grid-pane .label[fxml-id] {
+    -fx-text-fill: #0078d7; /* Colore personalizzato per le label dinamiche */
+}
+
+/* TableView generale */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #f0f0f0;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+    -fx-border-color: #ddd;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-view .cell {
+    -fx-padding: 8px;
+    -fx-font-size: 13px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 0 0 1px 0;
+    -fx-text-fill: #333;
+	
+}
+
+.table-view .cell:hover {
+    -fx-background-color: #eef5fb;
+}
+
+/* SplitPane */
+.split-pane {
+    -fx-background-color: #f9fafb;
+    -fx-divider-color: #ccc;
+}
+
+.split-pane .anchor-pane {
+    -fx-padding: 10px;
+}
+
+/* Bottoni */
+.button {
+    -fx-background-color: #4192FC;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 1, 1);
+}
+
+.button:hover {
+    -fx-background-color: #005a9e;
+}
+
+.button:pressed {
+    -fx-background-color: #004785;
+}
+.label
+
+
+

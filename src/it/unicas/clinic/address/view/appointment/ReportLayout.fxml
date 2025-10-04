@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicas.clinic.address.view.appointment.ReportLayoutController">
+   <children>
+      <BorderPane layoutY="45.0" prefHeight="355.0" prefWidth="600.0">
+         <center>
+            <GridPane prefHeight="229.0" prefWidth="465.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="serviceTF" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label alignment="TOP_RIGHT" prefHeight="18.0" prefWidth="266.0" stylesheets="@label_theme.css" text="Service:" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets right="100.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="18.0" prefWidth="256.0" stylesheets="@label_theme.css" text="Staff:" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets right="100.0" />
+                     </padding>
+                  </Label>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#chooseStaff" stylesheets="@medical_theme.css" text="Select" />
+                        <Label fx:id="nameLabel" alignment="CENTER" prefHeight="18.0" prefWidth="137.0" text="Name" GridPane.columnIndex="1" />
+                        <Label fx:id="surnameLabel" alignment="CENTER" prefHeight="18.0" prefWidth="130.0" text="Surname" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="startDatePeriodTF" alignment="CENTER" prefHeight="26.0" prefWidth="86.0">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="endDatePeriodTF" alignment="CENTER" prefHeight="26.0" prefWidth="100.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <Label stylesheets="@label_theme.css" text="Date: Start-End" />
+               </children>
+               <padding>
+                  <Insets left="70.0" top="20.0" />
+               </padding>
+            </GridPane>
+         </center>
+         <bottom>
+            <ButtonBar prefHeight="40.0" prefWidth="614.0" BorderPane.alignment="CENTER">
+               <buttons>
+                  <Button mnemonicParsing="false" onAction="#generateTXT" prefHeight="26.0" prefWidth="352.0" stylesheets="@medical_theme.css" text="Generate" />
+               </buttons>
+            </ButtonBar>
+         </bottom>
+         <padding>
+            <Insets right="100.0" />
+         </padding>
+      </BorderPane>
+      <Pane prefHeight="46.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="211.0" layoutY="7.0" stylesheets="@label_theme.css" text="Feature Selection">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

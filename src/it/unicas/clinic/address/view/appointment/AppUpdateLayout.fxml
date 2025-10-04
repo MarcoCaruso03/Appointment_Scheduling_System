@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicas.clinic.address.view.appointment.AppUpdateLayoutController">
+    <children>
+        <Label layoutX="111.0" layoutY="74.0" text="Service" />
+        <Label layoutX="117.0" layoutY="115.0" text="Date" />
+        <Label layoutX="116.0" layoutY="163.0" text="Time" />
+        <TextField fx:id="serviceField" layoutX="244.0" layoutY="70.0" />
+        <TextField fx:id="dateField" layoutX="244.0" layoutY="111.0" />
+        <TextField fx:id="timeField" layoutX="244.0" layoutY="159.0" />
+        <Button layoutX="139.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+        <Button layoutX="381.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+      <Label layoutX="110.0" layoutY="247.0" text="Staff ID" />
+      <Label layoutX="106.0" layoutY="285.0" text="Client ID" />
+      <TextField fx:id="staffIdField" layoutX="244.0" layoutY="243.0" />
+      <TextField fx:id="clientIdField" layoutX="244.0" layoutY="281.0" />
+      <Label layoutX="106.0" layoutY="210.0" text="Duration" />
+      <TextField fx:id="durationField" layoutX="244.0" layoutY="206.0" />
+    </children>
+</AnchorPane>

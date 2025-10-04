@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Daily">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Show" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Weekly">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Show" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Monthly">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Show" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button mnemonicParsing="false" text="Close" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>
