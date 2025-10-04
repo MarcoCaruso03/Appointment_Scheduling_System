@@ -8,6 +8,23 @@ Full demo video is available in the "videos" folder:
 
 [Watch the demo](videos/ClinicDemo.mp4)
 
+## Screeshot
+
+There are some screenshots from this project: 
+<p align="center">
+  <img src="img/HomePageOwner.PNG" width="300"/>
+  <img src="img/HomePageStaff.PNG" width="300"/>
+</p>
+<p align="center">
+  <img src="img/Login.PNG" width="300"/>
+  <img src="img/RecapStaffOwnerView.PNG" width="300"/>
+</p>
+<p align="center">
+  <img src="img/ListsOfAppointmentsLoggedInStaff.PNG" width="300"/>
+  <img src="img/SchedulingAppointment.PNG" width="300"/>
+</p>
+
+
 ---
 
 ## 🧩 Technologies Used
