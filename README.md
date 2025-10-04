@@ -11,7 +11,19 @@ Full demo video is available in the "videos" folder:
 ## Screeshot
 
 There are some screenshots from this project: 
-![Owner Home Page](img/HomePageOwner.PNG)
+<p align="center">
+  <img src="img/HomePageOwner.PNG" width="300"/>
+  <img src="img/HomePageStaff.PNG" width="300"/>
+</p>
+<p align="center">
+  <img src="img/Login.PNG" width="300"/>
+  <img src="img/RecapStaffOwnerView.PNG" width="300"/>
+</p>
+<p align="center">
+  <img src="img/ListsOfAppointmentsLoggedInStaff.PNG" width="300"/>
+  <img src="img/SchedulingAppointment.PNG" width="300"/>
+</p>
+
 
 ---
 
