@@ -4,9 +4,13 @@ The **Appointment Scheduling System** is a desktop application developed in **Ja
 It provides features for booking, modifying, and viewing appointments through an intuitive **JavaFX** graphical interface.
 
 # Video demo
-Full demo video is available in the "videos" folder:
+The full demo video is available as a ZIP file in the `videos` folder:
 
-[Watch the demo](videos/ClinicDemo.mp4)
+[Download Demo Video](videos/ClinicDemo.zip)
+
+> Note: You need to unzip the file to watch the video.
+
+---
 
 ## Screeshot
 
