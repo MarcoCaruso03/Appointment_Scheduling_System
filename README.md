@@ -11,7 +11,7 @@ Full demo video is available in the "videos" folder:
 ## Screeshot
 
 There are some screenshots from this project: 
-![Owner Home Page](img/HomePageOwner.png)
+![Owner Home Page](img/HomePageOwner)
 ---
 
 ## 🧩 Technologies Used
