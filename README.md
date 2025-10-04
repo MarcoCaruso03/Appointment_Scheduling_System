@@ -11,6 +11,7 @@ The Appointment Scheduling System is a desktop application developed in Java tha
 
 🧱 Project Architecture
 The system follows the Model-View-Controller (MVC) architecture to ensure modularity, scalability, and maintainability.
+
 **Model**
 Contains the core entities of the domain:
   * Client
