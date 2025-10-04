@@ -12,6 +12,7 @@ Full demo video is available in the "videos" folder:
 
 There are some screenshots from this project: 
 ![Owner Home Page](img/HomePageOwner.png)
+
 ---
 
 ## 🧩 Technologies Used
