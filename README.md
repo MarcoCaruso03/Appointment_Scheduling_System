@@ -28,6 +28,24 @@ There are some screenshots from this project:
   <img src="img/SchedulingAppointment.PNG" width="300"/>
 </p>
 
+---
+
+## 📂 Project Structure
+```plaintext
+/Appointment_Scheduling_System
+├─ README.md
+├─ img/
+├─ videos/
+├─ Documentation/
+├─ src/
+│  └─ it/unicas/clinic/address/
+│     ├─ model/
+│     ├─ utils/
+│     ├─ view/
+│     └─ Main.java
+├─ resources/
+
+```
 
 ---
 
