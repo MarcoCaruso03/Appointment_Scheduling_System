@@ -1,0 +1,12 @@
+it.unicas.clinic.address
+it.unicas.clinic.address.model
+it.unicas.clinic.address.model.dao
+it.unicas.clinic.address.model.dao.mysql
+it.unicas.clinic.address.utils
+it.unicas.clinic.address.view.appointment
+it.unicas.clinic.address.view.appointment.calendarView
+it.unicas.clinic.address.view.client
+it.unicas.clinic.address.view.credential
+it.unicas.clinic.address.view.login
+it.unicas.clinic.address.view.schedule
+it.unicas.clinic.address.view.staff
