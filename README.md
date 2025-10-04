@@ -8,6 +8,10 @@ Full demo video is available in the "videos" folder:
 
 [Watch the demo](videos/ClinicDemo.mp4)
 
+## Screeshot
+
+There are some screenshots from this project: 
+![Owner Home Page](img/HomePageOwner.png)
 ---
 
 ## 🧩 Technologies Used
